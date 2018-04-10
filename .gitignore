@@ -1,0 +1,6 @@
+*DB
+node_modules
+*.log
+.env
+dist
+cli/config.json

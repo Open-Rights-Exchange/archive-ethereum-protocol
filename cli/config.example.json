@@ -1,0 +1,46 @@
+{
+  "localProfile": {
+    "context": "local",
+    "web3Endpoint": "http://localhost:8545",
+    "ipfsEndpoint": "http://localhost:5001",
+    "apiEndpoint": "http://localhost:3000",
+    "verifierEndpoint": "http://localhost:3404",
+    "apiDescription": "some api",
+    "depositAmount": 100,
+    "amountPerCall": 1,
+    "httpMethod": "POST",
+    "databaseUrlClient": "mongodb://localhost:27017/clientDB",
+    "databaseUrlVerifier": "mongodb://localhost:27017/verifierDB",
+    "request": {"x": 1}
+  },
+  "awsProfile": {
+    "context": "remote",
+    "web3Endpoint": "http://ganache.acme.com:8545",
+    "ipfsEndpoint": "http://ipfs2.acme.com:5001",
+    "verifierEndpoint": "http://verifier.acme.com:3404",
+    "apiEndpoint": "https://app-name.aws.acme.com/endpoint",
+    "offerAddress": "0x1234...0",
+    "voucherAddress": "0x1234...0",
+    "cpuContractAddress": "0x1234...0",
+    "paymentChannelAddress": "0x1234...0",
+    "verifierPublicKey": "-----BEGIN PUBLIC KEY-----ABCD...ZZZ==-----END PUBLIC KEY-----",
+    "databaseUrlClient": "mongodb://localhost:27017/clientDB",
+    "databaseUrlVerifier": "mongodb://user:pw@abcd0001.mongohost.com:0123/verifierDB",
+    "request": {"query": "{ yourQueryName(yourParam:\"someParamValue\") {results} }"}
+  },
+  "dockerProfile": {
+    "context": "remote",
+    "web3Endpoint": "http://ganache.acme.com:8545",
+    "ipfsEndpoint": "http://ipfs2.acme.com:5001",
+    "verifierEndpoint": "http://verifier.acme.com:3404",
+    "apiEndpoint": "https://sandbox.acme.com",
+    "offerAddress": "0x1234...0",
+    "voucherAddress": "0x1234...0",
+    "cpuContractAddress": "0x1234...0",
+    "paymentChannelAddress": "0x1234...0",
+    "verifierPublicKey": "-----BEGIN PUBLIC KEY-----ABCD...ZZZ==-----END PUBLIC KEY-----",
+    "databaseUrlClient": "mongodb://localhost:27017/clientDB",
+    "databaseUrlVerifier": "mongodb://user:pw@abcd0001.mongohost.com:0123/verifierDB",
+    "request": {"query": "{ yourQueryName(yourParam:\"someParamValue\") {results} }"}
+  }
+}

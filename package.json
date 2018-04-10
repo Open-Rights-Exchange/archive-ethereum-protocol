@@ -1,0 +1,49 @@
+{
+  "name": "open-rights-exchange",
+  "version": "1.0.0",
+  "description": "Utilities for using the Open Rights Exchange protocol",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json --pretty",
+    "postinstall": "npm run build",
+    "test": "npm run build && mocha",
+    "test:watch": "mocha --watch",
+    "demo": "node --trace-warnings cli/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/api.market/protocol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/api.market/protocol/issues"
+  },
+  "homepage": "https://github.com/api.market/protocol#readme",
+  "devDependencies": {
+    "express": "^4.16.2",
+    "ganache-core": "^2.0.2",
+    "mocha": "^4.0.1",
+    "morgan": "^1.9.0",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "clean": "^4.0.2",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.5.4",
+    "elliptic": "^6.4.0",
+    "ethereumjs-util": "^5.1.4",
+    "ipfs-mini": "^1.1.2",
+    "js-sha3": "^0.7.0",
+    "jsonwebtoken": "^8.2.0",
+    "key-encoder": "^1.1.6",
+    "lodash": "^4.17.4",
+    "multihashes": "^0.4.13",
+    "node-fetch": "^2.0.0",
+    "payment-channel": "git+https://github.com/api-market/payment_channel.git#master",
+    "truffle-contract": "^3.0.1",
+    "url-parse": "^1.2.0",
+    "web3": "^0.19.0",
+    "zeppelin-solidity": "1.6.0"
+  }
+}
